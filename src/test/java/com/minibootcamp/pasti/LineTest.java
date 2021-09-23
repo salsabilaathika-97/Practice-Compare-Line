@@ -40,4 +40,11 @@ public class LineTest {
         Line line2 = new Line(1, 2, 4, 4);
         assertFalse(line1.compareLine(line2));
     }
+
+    @Test
+    void compareLine_ShouldEqualFalse_WhenFirstY1andSecondY1Different() {
+        Line line1 = new Line(1, 2, 3, 4);
+        Line line2 = new Line(1, 1, 3, 4);
+        assertFalse(line1.compareLine(line2));
+    }
 }
