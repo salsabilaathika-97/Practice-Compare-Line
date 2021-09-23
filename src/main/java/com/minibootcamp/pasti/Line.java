@@ -15,6 +15,6 @@ public class Line {
     }
 
     public boolean compareLine(Line line) {
-        return true;
+        return (this.x1 == line.x1);
     }
 }
