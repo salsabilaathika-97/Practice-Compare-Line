@@ -54,4 +54,11 @@ public class LineTest {
         Line line2 = new Line(1, 2, 3, 3);
         assertFalse(line1.compareLine(line2));
     }
+
+    @Test
+    void compareLine_ShouldEqualTrue_WhenPointsAreSameButReversed() {
+        Line line1 = new Line(1, 2, 3, 4);
+        Line line2 = new Line(1, 2, 3, 3);
+        assertFalse(line1.compareLine(line2));
+    }
 }
